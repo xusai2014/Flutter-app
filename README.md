@@ -1,6 +1,6 @@
 # myflutterapp
 
-** 为什么要用flutter **
+**为什么要用flutter**
 
 + 跨平台解决方案
 + 数据和视图以状态机呈现
