@@ -56,8 +56,8 @@ class FirstCon extends StatelessWidget {
     @required this.changeItems,
   }) : super(key: key);
 
-  String selectedFruit;
-  List<DropdownMenuItem<String>> dropDownMenuItems;
+  final String selectedFruit;
+  final List<DropdownMenuItem<String>> dropDownMenuItems;
   final Function changeItems;
   @override
   Widget build(BuildContext context) {
