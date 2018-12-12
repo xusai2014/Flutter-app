@@ -1,6 +1,12 @@
 # myflutterapp
 
-A new Flutter project.
+** 为什么要用flutter **
+
++ 跨平台解决方案
++ 数据和视图以状态机呈现
++ 组件化、数据共享
++ 非bridge，机器码运行
+
 
 ## Getting Started
 
@@ -210,3 +216,34 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
   }
 ```
 
+## 路由
+
+### 静态路由
+** 注册 **
+```
+
+    new MaterialApp(
+      title: 'MyFlutterApp',
+      theme: new ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: new MyHomePage(title: 'MyFlutterApp'),
+      routes: <String, WidgetBuilder> {
+        //定义静态路由，不能传递参数
+        '/router/myfirst': (_) => new MyFirst(),
+        '/router/mysecond': (_) => new MySecond(),
+      },
+    );
+
+```
+** 使用 **
+```
+Navigator.of(context).pushNamed('/router/myfirst');
+```
+
+### 动态路由
+
+```
+Navigator.of(context).push(new MaterialPageRoute(builder: (_) {return new MyFirst(title: 'MyFirst');}));
+
+```
