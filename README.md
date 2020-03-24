@@ -223,7 +223,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 ## 路由
 
 ### 静态路由
+
 ** 注册 **
+
 ```
 
     new MaterialApp(
@@ -240,7 +242,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
     );
 
 ```
+
 ** 使用 **
+
 ```
 Navigator.of(context).pushNamed('/router/myfirst');
 ```
